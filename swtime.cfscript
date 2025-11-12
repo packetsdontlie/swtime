@@ -1,0 +1,20 @@
+  <cfscript>
+    	/**
+    	* Get current Swatch Internet Time (sIT)
+    	* The goal of sIT may be commercial, but a base10 clock is wonderful
+    	* Can be very useful in timestamps and other variables
+    	* This function should self adjust for your UTC offset
+    	* See http://www.ypass.net for PHP and Perl versions
+    	* See http://www.swatch.com for information
+    	*
+    	* @return function returns a string
+    	* @author packetsdontlie@mac.com
+    	* @version 1, 12 April 2002
+    	*/
+    function swatchIT(){
+    	var myutc = GetTimeZoneInfo();
+    	var beats = ((3600 + Val(Hour(now()) * 3600) + Val(Minute(now()) *
+    			60) + Second(now()) + val(myutc.utcTotalOffset)) mod 86400) / 86.4;
+    	return decimalformat(beats);
+    }
+    </cfscript>
