@@ -17,6 +17,8 @@ Internet Time starts at 0 and works it's way up to 1000.
 One Beat = 86400 / 1000 = 86.4 seconds
 ```
 
+For more on Beats, see [https://www.swatch.com/en-en/internet-time.html](https://www.swatch.com/en-en/internet-time.html)
+
 # compiling
 
 ` gcc -std=c89 -pedantic -Wall -o swtime swtime.c`
