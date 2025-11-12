@@ -13,6 +13,10 @@ There are 86400 seconds in a day:
 
 Internet Time starts at 0 and works it's way up to 1000.
 
+```
+One Beat = 86400 / 1000 = 86.4 seconds
+```
+
 # compiling
 
 ` gcc -std=c89 -pedantic -Wall -o swtime swtime.c`
