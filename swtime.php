@@ -3,6 +3,8 @@
  * the date() command echo date("B"); will display the number of beats.  I
  * find the MilliBeat to be more useful, so i use this code and format it
  * appropriately with printf("%2.2f", swtime());
+ * 
+ * from Eric Kilfoil @ ypass.net
  */
 
 function swtime()
