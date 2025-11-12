@@ -18,7 +18,7 @@ Internet Time starts at 0 and works it's way up to 1000.
 ` gcc -std=c89 -pedantic -Wall -o swtime swtime.c`
 
 # usage
-
+```
 ./swtime -?
 Usage: swtime [epoch | beats | flags]
   --help, -?         Show this help message
@@ -28,3 +28,4 @@ Usage: swtime [epoch | beats | flags]
   [stdin]            Pipe date or beats into swtime
 bash-3.2$ date | ./swtime
 @257
+```
